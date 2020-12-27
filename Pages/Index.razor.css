@@ -1,0 +1,110 @@
+﻿h1 {
+    font-size: 2rem;
+}
+
+.background-container {
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+  
+.background {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content section.profile .badge {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 40px;
+    padding: 15px 0 0;
+}
+
+.content section.profile .badge .photo {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 35px 2px rgba(0,0,0,0.3);
+}
+
+.content section.profile {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-width: 300px;
+    padding: 0 15px;
+    margin: 30px auto;
+    z-index: 1;
+}
+
+.btn-linkedin {
+    color: var(--blue-70,#0073b1);
+}
+
+@media (min-width: 320px) {
+  .content section.profile {
+      width: 91.66666667%;
+      padding: 25px;
+      border-radius: .35rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5), inset 0 2px 5px #fff;
+      background-color: rgba(255,255,255,0.9);
+  }
+  
+    .background {
+        display: block;
+    }
+}
+
+@media (min-width: 425px) {
+  .content section.profile {
+      width: 83.33333333%;
+  }
+}
+  
+@media (min-width: 525px) {
+  .content section.profile {
+      width: 66.66666667%;
+  }
+}
+
+@media (min-width: 610px) {
+  .content section.profile {
+      width: 58.33333333%;
+  }
+}
+
+@media (min-width: 768px) {
+    .page section.profile {
+        width: 50%;
+        margin: 30px auto 120px;
+    }
+}
+
+@media (min-width: 900px) {
+    .page section.profile {
+        width: 41.66666667%;
+    }
+}
+@media (min-width: 992px){
+    .page section.profile {
+        width: 33.33333333%;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        margin: 0 auto 120px;
+    }
+}
+
+@media (min-width: 1024px){
+    .page section.profile {
+        width: 33.33333333%;
+    }
+}

@@ -1,7 +1,6 @@
-
-  .coinWrapper {
+.coinWrapper {
     width: 20rem;
-    height: 10rem;
+    height: 15rem;
     display: block;
     font-weight: bold;
     font-size: 3em;
@@ -9,15 +8,16 @@
     margin: 1rem auto 0;
     z-index: 1;
     position: relative;
-  }
-  
-  .coinWrapper > *,
-  .coinWrapper > *:before,
-  .coinWrapper > *:after {
+    text-align: center;
+}
+
+.coinWrapper > *,
+.coinWrapper > *:before,
+.coinWrapper > *:after {
     vertical-align: middle;
     display: inline-block;
-  }
-  .coin {
+}
+.coin {
     border-radius: 50%;
     background-color: transparent;
     margin: 0 auto;
@@ -29,27 +29,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  
-  .coinSubtract,
-  .coinAdd {
+}
+
+.coinSubtract,
+.coinAdd {
     background-color: #fff;
     border: 1px solid #333;
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
-    line-height: 0.5rem;
-    text-indent: -0.2rem;
+    line-height: 0rem;
+    text-indent: -0.55rem;
     padding: 1rem;
-    position: relative;
-    left: 1rem;
-  }
-  
-  .coinSubtract {
-    text-indent: 0;
-  }
-  
-  .coinAdd {
-    position: relative;
-    left: 12rem;
+    position: absolute;
+    top: 5.5rem;
+}
+
+.coinSubtract {
+    text-indent: -0.35rem;
+    left: 0rem;
+}
+
+.coinAdd {
+    right: 0rem;
+}
+
+.count {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: #77ee77;
+    background-color: #333;
+    position: absolute;
+    left: 8.5rem;
+    top: 5rem;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 50%;
+    pointer-events: none;
   }

@@ -5,7 +5,7 @@
               <span class="coinAdd" @onclick="IncrementUnit">
                 +
               </span>
-              <span classs="count">
+              <span class="count">
                 @currentCount
               </span>
               <div
@@ -13,8 +13,7 @@
                 style="
                   background-image: url('@ImageUrl');
                   width: @GetCoinSize();
-                  height: @GetCoinSize();
-                  right: @GetCoinRight();"
+                  height: @GetCoinSize();"
                 @onclick="IncrementUnit"
               ></div>
             </li>

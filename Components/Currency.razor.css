@@ -1,0 +1,55 @@
+
+  .coinWrapper {
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 10rem;
+    margin: 1rem auto 0;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .coinWrapper > *,
+  .coinWrapper > *:before,
+  .coinWrapper > *:after {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .coin {
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    z-index: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .coinSubtract,
+  .coinAdd {
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    line-height: 0.5rem;
+    text-indent: -0.2rem;
+    padding: 1rem;
+    position: relative;
+    left: 1rem;
+  }
+  
+  .coinSubtract {
+    text-indent: 0;
+  }
+  
+  .coinAdd {
+    position: relative;
+    left: 12rem;
+  }

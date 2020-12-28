@@ -1,0 +1,20 @@
+<li class="coinWrapper" id=@Id key=@Id>
+              <span class="coinSubtract" @onclick="DecrementUnit">
+                -
+              </span>
+              <span class="coinAdd" @onclick="IncrementUnit">
+                +
+              </span>
+              <span classs="count">
+                @currentCount
+              </span>
+              <div
+                class="coin"
+                style="
+                  background-image: url('@ImageUrl');
+                  width: @GetCoinSize();
+                  height: @GetCoinSize();
+                  right: @GetCoinRight();"
+                @onclick="IncrementUnit"
+              ></div>
+            </li>

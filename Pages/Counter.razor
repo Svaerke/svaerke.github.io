@@ -1,3 +1,4 @@
+@using svaerke.github.io.Components;
 @page "/playground/counter"
 
 <h1>Counter</h1>
@@ -5,7 +6,9 @@
 <p>Current count: NotImplemented</p>
 <div id="counterScene">
     <ol id="coins">
-        <svaerke.github.io.Components.Currency Amount=0.5 Id="pointFive" ImageUrl="https://en.numista.com/catalogue/photos/danemark/g915.jpg" Size=0.65 />
-        <svaerke.github.io.Components.Currency Amount=1 Id="one" ImageUrl="https://en.numista.com/catalogue/photos/danemark/g798.jpg" Size=0.6 />
+        @foreach (var currencyModel in currencyModels)
+        {
+            <Coin CurrencyModel=currencyModel />
+        }
     </ol>
 </div>

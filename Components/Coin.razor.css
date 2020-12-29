@@ -14,21 +14,13 @@
 .coinWrapper > *,
 .coinWrapper > *:before,
 .coinWrapper > *:after {
-    vertical-align: middle;
     display: inline-block;
 }
-.coin {
-    border-radius: 50%;
-    background-color: transparent;
-    margin: 0 auto;
-    width: 10rem;
-    height: 10rem;
-    line-height: 10rem;
-    z-index: 10;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+.coinControls {
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .coinSubtract,
@@ -41,17 +33,15 @@
     line-height: 0rem;
     text-indent: -0.55rem;
     padding: 1rem;
-    position: absolute;
-    top: 5.5rem;
 }
 
 .coinSubtract {
     text-indent: -0.35rem;
-    left: 0rem;
+    float: left;
 }
 
 .coinAdd {
-    right: 0rem;
+    float: right;
 }
 
 .count {
@@ -62,9 +52,17 @@
     background-color: #333;
     position: absolute;
     left: 8.5rem;
-    top: 5rem;
+    top: -0.5rem;
     text-align: center;
     z-index: 1000;
     border-radius: 50%;
     pointer-events: none;
+  }
+
+  .coin {
+      border-radius: 50%;
+      background-color: transparent;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }

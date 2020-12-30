@@ -10,5 +10,7 @@ namespace svaerke.github.io.Models {
         public double Denomination { get; set; }
 
         public CurrencyType Type { get; set; }
+
+        public double AspectRatio { get; set; } = 1;
     }
 }

@@ -56,7 +56,7 @@ namespace svaerke.github.io.Components {
             switch (CurrencyModel.Type)
             {
                 case CurrencyType.Note:
-                    result = ((baseSize * 2) * CurrencyModel.Size) * 0.576 + "rem";
+                    result = ((baseSize * 2) * CurrencyModel.Size) * CurrencyModel.AspectRatio + "rem";
                     break;
                 default:
                     result = this.Getwidth();

@@ -1,42 +1,58 @@
-using svaerke.github.io.Components;
+using System;
+using Microsoft.AspNetCore.Components;
+using svaerke.github.io.Models;
+using svaerke.github.io.Services;
 
 namespace svaerke.github.io.Pages {
-    public partial class Counter
+    public partial class Counter : IDisposable
     {
+        [Inject]
+        ICurrencyStorageService storage {get; set;}
+        
+        protected override void OnInitialized()
+        {
+            storage.OnChange += StateHasChanged;
+        }
+
+        public void Dispose()
+        {
+            storage.OnChange -= StateHasChanged;
+        }
+
         private CurrencyModel[] currencyModels = new CurrencyModel[] {
             new CurrencyModel {
                 Id = "pointFive",
-                Amount = 0.5,
+                Denomination = 0.5,
                 ImageUrl="https://en.numista.com/catalogue/photos/danemark/g915.jpg",
                 Size=0.65 
             },
             new CurrencyModel {
                 Id="one",
-                Amount=1,
+                Denomination=1,
                 ImageUrl="https://en.numista.com/catalogue/photos/danemark/g798.jpg",
                 Size=0.6
             },
             new CurrencyModel {
                 Id = "two",
-                Amount = 2.0,
+                Denomination = 2.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g796.jpg",
                 Size = 0.75
             },
             new CurrencyModel {
                 Id = "five",
-                Amount = 5.0,
+                Denomination = 5.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g1429.jpg",
                 Size = 1
             },
             new CurrencyModel {
                 Id = "ten",
-                Amount = 10.0,
+                Denomination = 10.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g790.jpg",
                 Size  = 0.7
             },
             new CurrencyModel {
                 Id = "twenty",
-                Amount = 20.0,
+                Denomination = 20.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g788.jpg",
                 Size = 0.9
             }

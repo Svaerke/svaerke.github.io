@@ -1,9 +1,7 @@
 @using svaerke.github.io.Components;
 @page "/playground/counter"
 
-<h1>Counter</h1>
-
-<p>Current count: NotImplemented</p>
+<div id="total">@storage.CurrencyTotal.ToString().Replace(".5", ",50") kr.</div>
 <div id="counterScene">
     <ol id="coins">
         @foreach (var currencyModel in currencyModels)

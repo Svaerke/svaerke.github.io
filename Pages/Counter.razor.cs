@@ -55,6 +55,13 @@ namespace svaerke.github.io.Pages {
                 Denomination = 20.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g788.jpg",
                 Size = 0.9
+            },
+            new CurrencyModel {
+                Id = "fifty",
+                Denomination = 50.0,
+                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e97325f3e5b51.81312186-original.jpg",
+                Size = 0.9,
+                Type = CurrencyType.Note
             }
         };
     }

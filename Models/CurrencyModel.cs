@@ -8,5 +8,7 @@ namespace svaerke.github.io.Models {
         public double Size { get; set; }
 
         public double Denomination { get; set; }
+
+        public CurrencyType Type { get; set; }
     }
 }

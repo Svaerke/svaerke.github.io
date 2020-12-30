@@ -61,10 +61,18 @@
     pointer-events: none;
   }
 
-  .coin {
-      border-radius: 50%;
+  .currency {
       background-color: transparent;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+  }
+  
+  .currency.coin {
+    border-radius: 50%;
+  }
+  
+  .currency.note {
+      position: relative;
+      top: 3rem;
   }

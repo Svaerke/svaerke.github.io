@@ -18,8 +18,20 @@ namespace svaerke.github.io.Components {
         
         protected override void OnInitialized()
         {
+            ResetUnit();
+            storage.OnChange -= ResetUnit;
+        }
+
+        public void Dispose()
+        {
+            storage.OnChange -= ResetUnit;
+        }
+
+        private void ResetUnit()
+        {
             this.count = storage.GetCurrencyCount(CurrencyModel);
         }
+
         private void IncrementUnit()
         {
             count ++;
@@ -35,8 +47,22 @@ namespace svaerke.github.io.Components {
             }
         }
 
-        private string GetCoinSize() {
+        private string Getwidth() {
             return (baseSize * 2) * CurrencyModel.Size + "rem";
+        }
+
+        private string GetHeight() {
+            string result = "";
+            switch (CurrencyModel.Type)
+            {
+                case CurrencyType.Note:
+                    result = ((baseSize * 2) * CurrencyModel.Size) * 0.576 + "rem";
+                    break;
+                default:
+                    result = this.Getwidth();
+                    break;
+            }
+            return result;
         }
 
         private string GetCoinCenter() {

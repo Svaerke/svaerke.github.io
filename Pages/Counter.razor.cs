@@ -24,37 +24,37 @@ namespace svaerke.github.io.Pages {
                 Id = "pointFive",
                 Denomination = 0.5,
                 ImageUrl="https://en.numista.com/catalogue/photos/danemark/g915.jpg",
-                Size=0.65 
+                Size=0.298611111111111
             },
             new CurrencyModel {
                 Id="one",
                 Denomination=1,
                 ImageUrl="https://en.numista.com/catalogue/photos/danemark/g798.jpg",
-                Size=0.6
+                Size=0.279861111111111
             },
             new CurrencyModel {
                 Id = "two",
                 Denomination = 2.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g796.jpg",
-                Size = 0.75
+                Size = 0.340277777777778
             },
             new CurrencyModel {
                 Id = "five",
                 Denomination = 5.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g1429.jpg",
-                Size = 1
+                Size = 0.395833333333333
             },
             new CurrencyModel {
                 Id = "ten",
                 Denomination = 10.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g790.jpg",
-                Size  = 0.7
+                Size  = 0.324305555555556
             },
             new CurrencyModel {
                 Id = "twenty",
                 Denomination = 20.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g788.jpg",
-                Size = 0.9
+                Size = 0.375
             },
             new CurrencyModel {
                 Id = "fifty",
@@ -71,6 +71,30 @@ namespace svaerke.github.io.Pages {
                 Size = 1,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.533
+            },
+            new CurrencyModel {
+                Id = "twohundred",
+                Denomination = 200.0,
+                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb3dc4759f7.72456052-original.jpg",
+                Size = 1.1,
+                Type = CurrencyType.Note,
+                AspectRatio = 0.4965517241
+            },
+            new CurrencyModel {
+                Id = "fivehundred",
+                Denomination = 500.0,
+                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb6d31dc562.98596921-original.jpg",
+                Size = 1.2,
+                Type = CurrencyType.Note,
+                AspectRatio = 0.464516129
+            },
+            new CurrencyModel {
+                Id = "oneThousand",
+                Denomination = 1000.0,
+                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb8fec56899.36903072-original.jpg",
+                Size = 1.3,
+                Type = CurrencyType.Note,
+                AspectRatio = 0.4363636364
             }
         };
     }

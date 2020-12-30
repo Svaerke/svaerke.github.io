@@ -1,0 +1,21 @@
+<li class="currencyWrapper" style="height: @(GetHeight())rem">
+              <div
+                class="currency @CurrencyModel.Type.ToString().ToLower()"
+                style="
+                  background-image: url('@CurrencyModel.ImageUrl');
+                  width: @(Getwidth())rem;
+                  height: @(GetHeight())rem;"
+                @onclick="IncrementUnit"
+              ></div>
+              <div class="currencyControls" style="top: @(@GetCurrencyCenter())rem">
+                <span class="currencySubtract" @onclick="DecrementUnit">
+                  -
+                </span>
+                <span class="currencyAdd" @onclick="IncrementUnit">
+                  +
+                </span>
+                <span class="count">
+                  @count
+                </span>
+              </div>
+            </li>

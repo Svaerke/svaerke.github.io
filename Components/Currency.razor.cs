@@ -4,7 +4,7 @@ using svaerke.github.io.Models;
 using svaerke.github.io.Services;
 
 namespace svaerke.github.io.Components {
-    public partial class Coin
+    public partial class Currency
     {
         [Inject]
         ICurrencyStorageService storage {get; set;}
@@ -19,7 +19,7 @@ namespace svaerke.github.io.Components {
         protected override void OnInitialized()
         {
             ResetUnit();
-            storage.OnChange -= ResetUnit;
+            storage.OnChange += ResetUnit;
         }
 
         public void Dispose()
@@ -65,7 +65,7 @@ namespace svaerke.github.io.Components {
             return result;
         }
 
-        private double GetCoinCenter() {
+        private double GetCurrencyCenter() {
             return ((this.GetHeight()) / 2) - 1;
         }
     }

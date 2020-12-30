@@ -1,5 +1,5 @@
-<li class="coinWrapper" style="height: @Getwidth();">
-              <div class="coinControls" style="top: @GetCoinCenter();">
+<li class="coinWrapper" style="height: @(GetHeight())rem">
+              <div class="coinControls" style="top: @(@GetCoinCenter())rem">
                 <span class="coinSubtract" @onclick="DecrementUnit">
                   -
                 </span>
@@ -14,8 +14,8 @@
                 class="currency @CurrencyModel.Type.ToString().ToLower()"
                 style="
                   background-image: url('@CurrencyModel.ImageUrl');
-                  width: @Getwidth();
-                  height: @GetHeight();"
+                  width: @(Getwidth())rem;
+                  height: @(GetHeight())rem;"
                 @onclick="IncrementUnit"
               ></div>
             </li>

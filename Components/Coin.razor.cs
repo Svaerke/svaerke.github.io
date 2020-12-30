@@ -47,16 +47,16 @@ namespace svaerke.github.io.Components {
             }
         }
 
-        private string Getwidth() {
-            return (baseSize * 2) * CurrencyModel.Size + "rem";
+        private double Getwidth() {
+            return (baseSize * 2) * CurrencyModel.Size;
         }
 
-        private string GetHeight() {
-            string result = "";
+        private double GetHeight() {
+            double result = 0;
             switch (CurrencyModel.Type)
             {
                 case CurrencyType.Note:
-                    result = ((baseSize * 2) * CurrencyModel.Size) * CurrencyModel.AspectRatio + "rem";
+                    result = ((baseSize * 2) * CurrencyModel.Size) * CurrencyModel.AspectRatio;
                     break;
                 default:
                     result = this.Getwidth();
@@ -65,8 +65,8 @@ namespace svaerke.github.io.Components {
             return result;
         }
 
-        private string GetCoinCenter() {
-            return (((baseSize * 2) * CurrencyModel.Size) / 2) - 1 + "rem";
+        private double GetCoinCenter() {
+            return ((this.GetHeight()) / 2) - 1;
         }
     }
 }

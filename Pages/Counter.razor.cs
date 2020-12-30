@@ -60,7 +60,7 @@ namespace svaerke.github.io.Pages {
                 Id = "fifty",
                 Denomination = 50.0,
                 ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e97325f3e5b51.81312186-original.jpg",
-                Size = 1,
+                Size = 0.9,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.576
             },

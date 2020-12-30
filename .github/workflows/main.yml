@@ -21,7 +21,9 @@ jobs:
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish svaerke.github.io.csproj -c Release -o release --nologo
+      run: |
+        cp wwwroot/index.html wwwroot/404.html
+        dotnet publish svaerke.github.io.csproj -c Release -o release --nologo
 
     - name: Install SSH Client 🔑
       uses: webfactory/ssh-agent@v0.4.1

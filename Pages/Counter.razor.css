@@ -16,6 +16,22 @@
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
+  z-index: 10;
+}
+
+#total input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#total .reset {
+  display: none;
+  padding: 0.5rem;
+}
+
+#total input:checked + .reset {
+  display: inline;
 }
 
 #coins {

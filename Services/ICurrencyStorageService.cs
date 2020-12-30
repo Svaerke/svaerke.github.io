@@ -9,6 +9,8 @@ namespace svaerke.github.io.Services
         public event Action OnChange;
          void StoreCurrencyCount(CurrencyModel currencyModel, int count);
 
+         void ResetCurrencyCount();
+
          int GetCurrencyCount(string id);
 
          int GetCurrencyCount(CurrencyModel currencyModel);

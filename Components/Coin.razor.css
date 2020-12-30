@@ -21,6 +21,7 @@
     position: absolute;
     left: 0;
     width: 100%;
+    pointer-events: none;
 }
 
 .coinSubtract,
@@ -33,6 +34,7 @@
     line-height: 0rem;
     text-indent: -0.55rem;
     padding: 1rem;
+    pointer-events: all;
 }
 
 .coinSubtract {

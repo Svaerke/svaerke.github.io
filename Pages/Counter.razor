@@ -1,7 +1,6 @@
 @using svaerke.github.io.Components;
 @page "/playground/counter"
 
-<div id="total">@storage.CurrencyTotal.ToString().Replace(".5", ",50") kr.</div>
 <div id="counterScene">
     <ol id="coins">
         @foreach (var currencyModel in currencyModels)
@@ -10,3 +9,7 @@
         }
     </ol>
 </div>
+<label id="total">@storage.CurrencyTotal.ToString().Replace(".5", ",50") kr.
+  <input type="checkbox">
+    <span class="reset" @onclick="storage.ResetCurrencyCount"> ❎</span>
+</label>

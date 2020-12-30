@@ -22,6 +22,18 @@ namespace svaerke.github.io.Services
             CurrencyTotal = this.GetCurrencyTotal();
         }
 
+        public void ResetCurrencyCount()
+        {
+            foreach (var currencyModel in storedCurrencies)
+            {
+                currencyModel.Value.Count = 0;
+            }
+            
+            localStorage.SetItem(storageKey, storedCurrencies);
+            CurrencyTotal = this.GetCurrencyTotal();
+            this.NotifyStateChanged();
+        }
+
         public void StoreCurrencyCount(CurrencyModel currencyModel, int count)
         {
             if (string.IsNullOrWhiteSpace(currencyModel?.Id)) return;

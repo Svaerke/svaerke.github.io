@@ -23,43 +23,43 @@ namespace svaerke.github.io.Pages {
             new CurrencyModel {
                 Id = "pointFive",
                 Denomination = 0.5,
-                ImageUrl="https://en.numista.com/catalogue/photos/danemark/g915.jpg",
+                ImageUrl="/assets/images/Currency/50ore.jpeg",
                 Size=0.298611111111111
             },
             new CurrencyModel {
                 Id="one",
                 Denomination=1,
-                ImageUrl="https://en.numista.com/catalogue/photos/danemark/g798.jpg",
+                ImageUrl="/assets/images/Currency/1kr.jpeg",
                 Size=0.279861111111111
             },
             new CurrencyModel {
                 Id = "two",
                 Denomination = 2.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g796.jpg",
+                ImageUrl = "/assets/images/Currency/2kr.jpeg",
                 Size = 0.340277777777778
             },
             new CurrencyModel {
                 Id = "five",
                 Denomination = 5.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g1429.jpg",
+                ImageUrl = "/assets/images/Currency/5kr.jpeg",
                 Size = 0.395833333333333
             },
             new CurrencyModel {
                 Id = "ten",
                 Denomination = 10.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g790.jpg",
+                ImageUrl = "/assets/images/Currency/10kr.jpeg",
                 Size  = 0.324305555555556
             },
             new CurrencyModel {
                 Id = "twenty",
                 Denomination = 20.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/g788.jpg",
+                ImageUrl = "/assets/images/Currency/20kr.jpeg",
                 Size = 0.375
             },
             new CurrencyModel {
                 Id = "fifty",
                 Denomination = 50.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e97325f3e5b51.81312186-original.jpg",
+                ImageUrl = "/assets/images/Currency/50kr.jpeg",
                 Size = 0.9,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.576
@@ -67,7 +67,7 @@ namespace svaerke.github.io.Pages {
             new CurrencyModel {
                 Id = "onehundred",
                 Denomination = 100.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e973333b98811.27588858-original.jpg",
+                ImageUrl = "/assets/images/Currency/100kr.jpeg",
                 Size = 1,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.533
@@ -75,7 +75,7 @@ namespace svaerke.github.io.Pages {
             new CurrencyModel {
                 Id = "twohundred",
                 Denomination = 200.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb3dc4759f7.72456052-original.jpg",
+                ImageUrl = "/assets/images/Currency/200kr.jpeg",
                 Size = 1.1,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.4965517241
@@ -83,7 +83,7 @@ namespace svaerke.github.io.Pages {
             new CurrencyModel {
                 Id = "fivehundred",
                 Denomination = 500.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb6d31dc562.98596921-original.jpg",
+                ImageUrl = "/assets/images/Currency/500kr.jpeg",
                 Size = 1.2,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.464516129
@@ -91,7 +91,7 @@ namespace svaerke.github.io.Pages {
             new CurrencyModel {
                 Id = "oneThousand",
                 Denomination = 1000.0,
-                ImageUrl = "https://en.numista.com/catalogue/photos/danemark/5e9eb8fec56899.36903072-original.jpg",
+                ImageUrl = "/assets/images/Currency/1000kr.jpeg",
                 Size = 1.3,
                 Type = CurrencyType.Note,
                 AspectRatio = 0.4363636364

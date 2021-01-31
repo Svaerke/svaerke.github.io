@@ -8,12 +8,8 @@
                 @onclick="IncrementUnit"
               ></div>
               <div class="currencyControls" style="top: @(@GetCurrencyCenter())rem">
-                <span class="currencySubtract" @onclick="DecrementUnit">
-                  -
-                </span>
-                <span class="currencyAdd" @onclick="IncrementUnit">
-                  +
-                </span>
+                <span class="control minus" @onclick="DecrementUnit" />
+                <span class="control plus" @onclick="IncrementUnit" />
                 <span class="count">
                   @count
                 </span>

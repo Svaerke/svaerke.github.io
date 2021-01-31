@@ -23,26 +23,64 @@
     pointer-events: none;
 }
 
-.currencySubtract,
-.currencyAdd {
-    background-color: #fff;
-    border: 1px solid #333;
-    border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
-    line-height: 0rem;
-    text-indent: -0.55rem;
-    padding: 1rem;
+.currencyControls .control{
+    border: 1px solid #aaa;
+    box-shadow: inset 1px 1px 3px #fff;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
     pointer-events: all;
 }
-
-.currencySubtract {
-    text-indent: -0.35rem;
+.currencyControls .control:active{
+    background: radial-gradient(#eee, #fff);
+}
+.currencyControls .control:before,
+.currencyControls .control:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.currencyControls .control.plus {
+    float: right;
+}
+.currencyControls .control.plus:before,
+.currencyControls .control.plus:after {
+    background: #333;
+    box-shadow: 1px 1px 1px #ffffff9e;
+}
+.currencyControls .control.plus:before{
+    width: 2px;
+    margin: 6px auto;
+}
+.currencyControls .control.plus:after{
+    margin: auto 6px;
+    height: 2px;
+    box-shadow: none;
+}
+/* MINUS */
+.currencyControls .control.minus {
     float: left;
 }
-
-.currencyAdd {
-    float: right;
+.currencyControls .control.minus:before{
+    background: #333;
+    margin: auto 6px;
+    height: 2px;
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+/* CROSS */
+.currencyControls .control.cross:after,
+.currencyControls .control.cross:before{
+    background: #333;
+    margin: auto 4px;
+    height: 2px;
+    transform:rotateZ(45deg);
+    box-shadow: 0px 1px 1px #ffffff9e;
+}
+.currencyControls .control.cross:after{
+    transform:rotateZ(-45deg);
 }
 
 .count {

@@ -24,6 +24,7 @@
 }
 
 .currencyControls .control{
+    background-color: #ffffff66;
     border: 1px solid #aaa;
     box-shadow: inset 1px 1px 3px #fff;
     width: 2rem;

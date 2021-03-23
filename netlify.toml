@@ -4,7 +4,7 @@
   # the build. This is relative to the base directory if one has been set, or the
   # root directory if a base has not been set. This sample publishes the
   # directory located at the absolute path "root/project/build-output"
-  publish = "wwwroot/"
+  publish = "release/wwwroot"
 
   # Default build command.
   command = "dotnet publish svaerke.github.io.csproj -c Release -o release --nologo"

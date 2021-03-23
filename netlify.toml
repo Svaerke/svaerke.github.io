@@ -17,7 +17,7 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
-  from = "/*"
+  from = "/playground/*"
   to = "/index.html"
   status = 200
 
@@ -29,6 +29,6 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "Referrer-Policy: strict-origin-when-cross-origin"
+    Referrer-Policy = "strict-origin-when-cross-origin"
     permissions-policy = "geolocation=(self), microphone=(self)"
     Content-Security-Policy = "default-src 'self'"

@@ -53,6 +53,8 @@ a, .btn-link {
     
     .background-container {
         background-color: #f8f8f8;
+        background: url(/assets/images/pexels-640.jpg) no-repeat top center fixed;
+        background-size: cover;
         position: fixed;
         top: 0;
         left: 0;
@@ -140,6 +142,9 @@ a, .btn-link {
             width: 50%;
             margin: 30px auto 120px;
         }
+        .background-container {
+            background-image: url(/assets/images/pexels-768.jpg);
+        }
     }
     
     @media (min-width: 900px) {
@@ -160,6 +165,21 @@ a, .btn-link {
     @media (min-width: 1024px){
         section.profile {
             width: 33.33333333%;
+        }
+        .background-container {
+            background-image: url(/assets/images/pexels-1024.jpg);
+        }
+    }
+    
+    @media (min-width: 1280px){
+        .background-container {
+            background-image: url(/assets/images/pexels-1280.jpg);
+        }
+    }
+    
+    @media (min-width: 1920px){
+        .background-container {
+            background-image: url(/assets/images/pexels-1920.jpg);
         }
     }
 
